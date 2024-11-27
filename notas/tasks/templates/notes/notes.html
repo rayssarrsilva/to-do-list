@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Criar Nota</title>
+</head>
+<body>
+    <h2>Criar Nota</h2>
+    <form method="post" action="/tasks/listanotas/">
+        {% csrf_token %}
+        {{ create_form }} 
+        <button type="submit">Criar</button>
+    </form>
+</body>
+</html>

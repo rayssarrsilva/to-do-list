@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+            Registro
+    </title>
+</head>
+<body>       
+     <h1> Registro do usúario </h1>
+    <form class="form-register" action="/user/register/" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button class="register-submit">Registrar</button>
+    </form>
+</body>
+</html>

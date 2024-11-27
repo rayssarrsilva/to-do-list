@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Criar Nota</title>
+</head>
+<body>
+
+    <h2>Editar Nota: {{ note.title }}</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ edit_form }}  
+        <button type="submit">Salvar alterações</button>
+    </form>
+</body>
+</html>
